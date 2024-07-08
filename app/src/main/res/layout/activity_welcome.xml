@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Waga (kg)" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wiek" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oblicz zapotrzebowanie na wodę" />
+
+    <TextView
+        android:id="@+id/textViewWaterIntake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupWaterOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonOneGlass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 szklanka (250 ml)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCustomAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodaj własnoręcznie" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextWaterConsumed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ilość wypitej wody (ml)"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonAddWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodaj wypitą wodę" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wyloguj" />
+</LinearLayout>
